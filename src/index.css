@@ -1,0 +1,62 @@
+body {
+  font-family: sans-serif;
+  background: linear-gradient(to right, #f9e0e0, #fdf6f6);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding: 2rem;
+  text-align: center;
+}
+
+h1 {
+  color: #c94f7c;
+}
+
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+  margin-top: 2rem;
+}
+
+.day {
+  background-color: #fff0f5;
+  border: 1px solid #f2c6d3;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 120px;
+}
+
+.day-number {
+  font-weight: bold;
+  color: #c94f7c;
+  margin-bottom: 5px;
+}
+
+.today {
+  background-color: #ffccdd;
+  padding: 3px 6px;
+  border-radius: 6px;
+}
+
+textarea {
+  resize: none;
+  width: 100%;
+  height: 80px;
+  font-size: 0.9rem;
+  border: none;
+  background: transparent;
+  color: #333;
+  outline: none;
+}
+
+.empty {
+  height: 120px;
+}
+
